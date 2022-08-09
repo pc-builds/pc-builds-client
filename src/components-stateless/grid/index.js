@@ -1,0 +1,1 @@
+export { GridItem, GridContainer } from "./styles";

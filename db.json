@@ -1,0 +1,56 @@
+{
+  "builds": [
+    {
+      "id": 1,
+      "name": "Max bygger - billigare",
+      "images": [
+        "https://www.cnet.com/a/img/resize/9a65f5cd3c66b431e9bb2dd11ae9a7ba9bb3125e/2021/10/19/deb2bcd4-4b54-48de-b44f-4a12bf60a534/bld-kit.jpg?auto=webp&width=1200"
+      ],
+      "cpu": "CPU002",
+      "type": "prebuilt"
+    },
+    {
+      "id": 2,
+      "name": "Max bygger - billigare",
+      "images": [
+        "https://www.cnet.com/a/img/resize/9a65f5cd3c66b431e9bb2dd11ae9a7ba9bb3125e/2021/10/19/deb2bcd4-4b54-48de-b44f-4a12bf60a534/bld-kit.jpg?auto=webp&width=1200"
+      ],
+      "cpu": "CPU001",
+      "type": "custom"
+    }
+  ],
+  "parts": [
+    {
+      "id": "CPU001",
+      "name": "ASUS GeForce RTX 3070 Dual OC V2 8GB",
+      "images": [
+        "https://www.komplett.se/img/p/900/1189237.jpg?view=gallery&orientation=horizontal",
+        "https://www.komplett.se/img/p/900/1189237_1.jpg?view=gallery&orientation=horizontal"
+      ],
+      "retailers": [
+        { "name": "Komplett", "price": 7390, "stockStatus": 14 },
+        { "name": "Webhallen", "price": 7890, "stockStatus": 1 }
+      ]
+    },
+    {
+      "id": "CPU002",
+      "name": "ASUS GeForce RTX 2060 DUAL EVO OC",
+      "images": [
+        "https://www.komplett.se/img/p/3000/1159059.jpg?view=gallery&orientation=horizontal",
+        "https://www.komplett.se/img/p/3000/1159059_1.jpg?view=gallery&orientation=horizontal",
+        "https://www.komplett.se/img/p/3000/1159059_2.jpg?view=gallery&orientation=horizontal",
+        "https://www.komplett.se/img/p/3000/1159059_4.jpg?view=gallery&orientation=horizontal"
+      ],
+      "retailers": [
+        {
+          "name": "Komplett",
+          "price": 2999,
+          "originalPrice": 4939,
+          "stockStatus": 100
+        },
+        { "name": "Inet", "price": 5399, "stockStatus": 8 },
+        { "name": "Webhallen", "price": 4990, "stockStatus": 1 }
+      ]
+    }
+  ]
+}
