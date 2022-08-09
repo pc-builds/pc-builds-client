@@ -3,10 +3,10 @@ import {
   FlexContainer,
   Hero,
   Section,
-} from "../components-stateless";
-import styled from "styled-components";
-import { Funnel } from "../components";
-import { theme } from "../utils/theme";
+} from '../components-stateless';
+import styled from 'styled-components';
+import { Funnel } from '../components';
+import { theme } from '../utils';
 
 const ContactHeader = styled.h2`
   font-size: 1.8rem;
@@ -37,7 +37,7 @@ export default function Home() {
         <Section>
           <Hero />
         </Section>
-        
+
         <Section background={theme.colors.bg.contrast}>
           <Funnel />
         </Section>
@@ -46,10 +46,10 @@ export default function Home() {
           flexDirection="column"
           alignItems="center"
           style={{
-            textAlign: "center",
-            padding: "0px 24px",
-            marginBottom: "160px",
-            marginTop: "120px",
+            textAlign: 'center',
+            padding: '0px 24px',
+            marginBottom: '160px',
+            marginTop: '120px',
           }}
         >
           <ContactHeader>

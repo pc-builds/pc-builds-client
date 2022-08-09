@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { theme } from "../../utils/theme";
-import { Lead } from "../text";
+import styled from 'styled-components';
+import { theme } from '../../utils';
+import { Lead } from '../text';
 
 export const HeroWrapper = styled.div`
   height: 500px;

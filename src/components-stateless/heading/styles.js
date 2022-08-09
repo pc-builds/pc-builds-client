@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { theme } from "../../utils/theme";
+import styled, { css } from 'styled-components';
+import { theme } from '../../utils';
 
 export const HeadingBase = styled.div`
   margin: 0;
@@ -24,7 +24,7 @@ export const StyledH1 = css`
 `;
 
 export const H1 = styled(HeadingBase).attrs((props) => ({
-  as: props.as || "h1",
+  as: props.as || 'h1',
 }))`
   ${StyledH1}
 `;

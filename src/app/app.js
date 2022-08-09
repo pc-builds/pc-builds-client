@@ -1,11 +1,11 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { Router } from "./index";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { ThemeProvider } from "styled-components";
-import { theme } from "../utils/theme";
-import Globalstyle from "../utils/global-style";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './index';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../utils';
+import Globalstyle from '../utils/styling/global-style';
 
 export default function App() {
   const queryClient = new QueryClient();

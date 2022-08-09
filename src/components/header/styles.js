@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { theme } from "../../utils/theme";
+import styled from 'styled-components';
+import { theme } from '../../utils';
 
 export const HeaderWrapper = styled.div`
   width: 100%;
