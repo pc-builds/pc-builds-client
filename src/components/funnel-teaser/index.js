@@ -1,0 +1,1 @@
+export { default as FunnelTeaser } from "./funnel-teaser"

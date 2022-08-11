@@ -1,0 +1,1 @@
+export { default as FunnelTeaserSlice } from "./funnel-teaser-slice"

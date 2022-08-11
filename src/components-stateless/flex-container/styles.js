@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FlexContainer = styled.div`
   display: flex;
-  height: 100%;
+  height: ${({ fullHeight }) => fullHeight ? "100%" : "auto"};
 
   ${({ alignItems }) =>
     alignItems && `

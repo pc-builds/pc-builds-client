@@ -10,6 +10,7 @@ export const GridItem = styled.li`
 export const GridContainer = styled.ul`
   display: flex;
   flex-wrap: ${({ noWrap }) => (noWrap ? 'nowrap' : 'wrap')};
+  justify-content: center;
   align-items: stretch;
   list-style: none;
   padding: 0;

@@ -1,3 +1,3 @@
 export { Header } from "./header";
-export { Funnel } from "./funnel";
+export { FunnelTeaser } from "./funnel-teaser";
 export { Card } from "./card";

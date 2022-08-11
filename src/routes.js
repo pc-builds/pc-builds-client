@@ -1,4 +1,4 @@
-import { Home, NotFound } from "./pages/index";
+import { HomePage, NotFound, Funnel } from "./pages/index";
 import { MainLayout } from "./layouts";
 
 export const routes = [
@@ -7,8 +7,9 @@ export const routes = [
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <HomePage />,
       },
+      { path: "/form", element: <Funnel /> },
       { path: "*", element: <NotFound /> },
     ],
   },
