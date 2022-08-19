@@ -1,4 +1,4 @@
-import { HomePage, NotFound, Funnel } from "./pages/index";
+import { HomePage, NotFound, FunnelPage } from "./pages/index";
 import { MainLayout } from "./layouts";
 
 export const routes = [
@@ -9,7 +9,7 @@ export const routes = [
         path: "/",
         element: <HomePage />,
       },
-      { path: "/form", element: <Funnel /> },
+      { path: "/funnel/:id", element: <FunnelPage /> },
       { path: "*", element: <NotFound /> },
     ],
   },

@@ -18,4 +18,10 @@ export const CardWrapper = styled.div`
         border: solid 1px ${hover}
       }
     `}
+
+    ${({ clickable }) =>
+    clickable &&
+    css`
+      cursor: pointer;
+    `}
 `;

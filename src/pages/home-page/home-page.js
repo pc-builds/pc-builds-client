@@ -1,11 +1,9 @@
 import {
-    Distance,
     FlexContainer,
     Hero,
     Section,
   } from '../../components-stateless';
   import styled from 'styled-components';
-  import { FunnelTeaser } from '../../components';
   import { theme } from '../../utils';
 import { FunnelTeaserSlice } from './slices';
   
