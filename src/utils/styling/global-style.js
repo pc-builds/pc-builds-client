@@ -15,4 +15,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html, body {
+  height: 100%;
+}
+
+// 100% - height of navbar
+#root {
+  height: calc(100% - 63px);
+}
 `;

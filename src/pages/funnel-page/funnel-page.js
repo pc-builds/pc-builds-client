@@ -6,10 +6,10 @@ import { theme } from "../../utils";
 export default function FunnelPage() {
   return (
     <>
-      <Section background={theme.colors.bg.contrast}>
-        <Distance size="120">
+      <Section background={theme.colors.bg.contrast} fullHeight>
+        <div style={{ display: "flex", height: "100%", alignItems: "center"}}>
           <Funnel />
-        </Distance>
+        </div>
       </Section>
     </>
   );

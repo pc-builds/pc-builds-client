@@ -6,6 +6,12 @@ export const ContainerBase = styled.div`
   text-align: ${({ alignText }) => alignText || "left"};
   max-width: ${({ maxWidth }) => maxWidth && `${maxWidth}px` || "none"};
 
+  ${({ fullHeight }) =>
+    fullHeight &&
+    css`
+      height: 100%;
+    `}
+
   ${({ centerAlignContent }) =>
     centerAlignContent &&
     css`

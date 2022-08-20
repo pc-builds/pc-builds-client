@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { theme } from '../../utils';
+import styled, { css } from "styled-components";
+import { theme } from "../../utils";
 
 export const Content = styled.div`
   /* width: 100%; */
@@ -13,4 +13,10 @@ export const Content = styled.div`
     padding-left: 34px;
     padding-right: 34px;
   }
+
+  ${({ fullHeight }) =>
+    fullHeight &&
+    css`
+      height: 100%;
+    `}
 `;
