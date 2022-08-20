@@ -31,10 +31,10 @@ export const ContainerBase = styled.div`
   ${({ py }) =>
     py &&
     (resolveBreakpointStyles(py, ["padding-top", "padding-bottom"]) ||
-    `
-      padding-top: ${py}px;
-      padding-bottom: ${py}px;
-    `
+      `
+        padding-top: ${py}px;
+        padding-bottom: ${py}px;
+      `
     )
   }
 `;
