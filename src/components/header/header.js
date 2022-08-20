@@ -4,7 +4,7 @@ import { HeaderWrapper } from "./styles";
 export default function Header() {
   return (
     <HeaderWrapper>
-      <SpaceBetween fullHeight>
+      <SpaceBetween height="100%">
         <p>Gizmo</p>
         <SpaceBetween>
           <p>1</p>

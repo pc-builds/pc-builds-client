@@ -40,6 +40,8 @@ export const theme = {
     lt_sm: '@media (max-width: 480px)',
     gt_sm: '@media (min-width: 481px)', 
     lt_md: '@media (max-width: 768px)',
-    gt_md: '@media (min-width: 769px)'
+    gt_md: '@media (min-width: 769px)',
+    lt_lg: '@media (max-width: 1024px)',
+    gt_lg: '@media (min-width: 1025px)',
   }
 };

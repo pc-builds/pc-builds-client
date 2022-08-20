@@ -6,9 +6,11 @@ import { theme } from "../../utils";
 export default function FunnelPage() {
   return (
     <>
-      <Section background={theme.colors.bg.contrast} fullHeight>
-        <div style={{ display: "flex", height: "100%", alignItems: "center"}}>
-          <Funnel />
+      <Section background={theme.colors.bg.main} fullHeight>
+        <div style={{ display: "flex", height: "100%", alignItems: "center" }}>
+          <div style={{ height: "100%" }}>
+            <Funnel />
+          </div>
         </div>
       </Section>
     </>

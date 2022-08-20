@@ -1,1 +1,1 @@
-export { FlexContainer, SpaceBetween} from "./styles";
+export { FlexContainer, FlexItem, SpaceBetween} from "./styles";

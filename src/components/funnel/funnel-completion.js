@@ -3,12 +3,11 @@ import React from "react";
 export default function FunnelCompletion({ completion }) {
   console.log(completion);
   return (
-    <div>
-      <div>
         <div
           style={{
             height: "10px",
-            width: "300px",
+            width: "100%",
+            maxWidth: "300px",
             borderRadius: "20px",
             background: "lightGrey",
           }}
@@ -22,7 +21,5 @@ export default function FunnelCompletion({ completion }) {
             }}
           ></div>
         </div>
-      </div>
-    </div>
   );
 }

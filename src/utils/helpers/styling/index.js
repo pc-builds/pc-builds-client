@@ -1,1 +1,1 @@
-export { size } from './styling-helpers';
+export { size, resolveBreakpointStyles } from './styling-helpers';
