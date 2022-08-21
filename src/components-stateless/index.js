@@ -7,3 +7,5 @@ export { Lead, TextBase } from "./text";
 export { Container } from "./container";
 export { Section } from "./section";
 export { GridItem, GridContainer } from "./grid";
+export { Card } from "./card";
+export { Button } from "./button"

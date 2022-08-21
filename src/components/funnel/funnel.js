@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { Container, FlexContainer, SpaceBetween } from "../../components-stateless";
-import { Card } from "../index";
+import { Container, FlexContainer, SpaceBetween, Card } from "../../components-stateless";
 import { useFunnel, FunnelHead, FunnelBody, FunnelFooter } from "./index";
 
 export default function Funnel() {
@@ -16,8 +15,8 @@ export default function Funnel() {
         <Container fullHeight>
           <FlexContainer flexDirection="column" height="100%">
             <FunnelHead stepData={stepData} completion={completion} />
-            <FunnelBody stepData={stepData} />
-            <FunnelFooter updateStep={updateStep} />
+            <FunnelBody stepData={stepData} updateAnswer={updateAnswer}/>
+            <FunnelFooter updateStep={updateStep} currentStep={currentStep}/>
           </FlexContainer>
         </Container>
       </Card>

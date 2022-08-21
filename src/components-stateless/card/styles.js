@@ -1,7 +1,8 @@
 import styled, { css } from "styled-components";
 import { theme } from "../../utils";
 
-export const CardWrapper = styled.div`
+
+export const Card = styled.div`
   height: 100%;
   background: ${({ bg }) => bg || theme.colors.bg.main};
   border-radius: ${({ rounded }) => rounded && "20px"};

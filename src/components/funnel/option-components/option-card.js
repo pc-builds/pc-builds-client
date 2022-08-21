@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, H5, TextBase } from "../../../components-stateless";
+import { Container, H5, TextBase, Card } from "../../../components-stateless";
 import { theme } from "../../../utils";
-import { Card } from "../../index";
 
 export default function OptionCard({ title, description }) {
   return (

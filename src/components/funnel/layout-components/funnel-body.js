@@ -1,8 +1,13 @@
 import React from "react";
-import { Container, FlexContainer } from "../../components-stateless";
-import { FunnelSlice } from "./index";
+import { Container, FlexContainer } from "../../../components-stateless";
+import { FunnelSlice } from "../index";
 
-export default function FunnelBody({ stepData }) {
+export default function FunnelBody({ stepData, updateAnswer }) {
+
+  const handleClick = (answer) => {
+    updateAnswer(answer)
+  }
+
   return (
     <>
       <FlexContainer style={{ flexGrow: 2 }} alignItems="center">
@@ -11,7 +16,7 @@ export default function FunnelBody({ stepData }) {
             <FunnelSlice
               sliceType={stepData.sliceType}
               options={stepData.options}
-              //   onClick={handleClick}
+              onClick={handleClick}
             />
           )}
         </Container>

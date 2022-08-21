@@ -1,12 +1,15 @@
 import React from "react";
-import { Container, H4, SpaceBetween } from "../../components-stateless";
+import { Container, H4, SpaceBetween } from "../../../components-stateless";
 import { FunnelCompletion } from "./index";
 
 export default function FunnelHead({ stepData, completion }) {
   return (
     <>
       <Container py={35}>
-        <SpaceBetween flexDirection={{ xs: "column-reverse", md: "row" }} gap={50}>
+        <SpaceBetween
+          flexDirection={{ xs: "column-reverse", md: "row" }}
+          gap={50}
+        >
           <H4>
             {stepData.step}
             {". "}
