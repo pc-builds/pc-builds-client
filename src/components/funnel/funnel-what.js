@@ -38,4 +38,23 @@ export const funnel001 = [
     ],
     sliceType: "card-grid"
   },
+  {
+    step: 3,
+    question: "Vilken typ av terminatorsh?",
+    options: [
+      {
+        title: "knallball",
+        description:
+          "Precis hur det låter, datoren är byggd hos leverantör och är redo att användas direkt vid unboxing!",
+        value: "kalleeeeee"
+      },
+      {
+        title: "tjallfjall",
+        description:
+          "Köp varje ingående del för sig och sätt ihop den på egen hand. Kräver lite erfarenhet eller kanske en hjälpande hand.",
+          value: "balleeeeeeeeeeeeeee"
+        },
+    ],
+    sliceType: "card-grid"
+  },
 ];

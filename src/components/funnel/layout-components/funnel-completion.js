@@ -1,4 +1,5 @@
 import React from "react";
+import { theme } from "../../../utils";
 
 export default function FunnelCompletion({ completion }) {
   return (
@@ -7,7 +8,7 @@ export default function FunnelCompletion({ completion }) {
         style={{
           height: "10px",
           width: "100%",
-          maxWidth: "300px",
+          maxWidth: "350px",
           borderRadius: "20px",
           background: "lightGrey",
         }}
@@ -16,7 +17,7 @@ export default function FunnelCompletion({ completion }) {
           style={{
             width: `${completion}%`,
             height: "100%",
-            background: "green",
+            background: theme.colors.bg.accent,
             borderRadius: "20px",
           }}
         ></div>

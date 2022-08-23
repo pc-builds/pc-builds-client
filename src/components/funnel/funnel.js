@@ -1,13 +1,18 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import { Container, FlexContainer, SpaceBetween, Card } from "../../components-stateless";
+import { useLocation, useParams } from "react-router-dom";
+import {
+  Container,
+  FlexContainer,
+  Card,
+} from "../../components-stateless";
 import { useFunnel, FunnelHead, FunnelBody, FunnelFooter } from "./index";
 
 export default function Funnel() {
   let { id } = useParams();
+  let { state } = useLocation();
 
   const { stepData, currentStep, updateAnswer, updateStep, completion } =
-    useFunnel(id);
+    useFunnel(id, false, state);
 
   return (
     <>
@@ -15,8 +20,12 @@ export default function Funnel() {
         <Container fullHeight>
           <FlexContainer flexDirection="column" height="100%">
             <FunnelHead stepData={stepData} completion={completion} />
-            <FunnelBody stepData={stepData} updateAnswer={updateAnswer}/>
-            <FunnelFooter updateStep={updateStep} currentStep={currentStep}/>
+            <FunnelBody stepData={stepData} updateAnswer={updateAnswer} />
+            <FunnelFooter
+              updateStep={updateStep}
+              currentStep={currentStep}
+              completion={completion}
+            />
           </FlexContainer>
         </Container>
       </Card>

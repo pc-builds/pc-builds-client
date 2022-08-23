@@ -4,16 +4,20 @@ import { Distance, H4 } from "../../components-stateless";
 import { FunnelSlice, useFunnel } from "../index";
 
 export default function FunnelTeaser() {
-  let navigate = useNavigate();
-  const onSubmit = () => {
-    navigate(`/funnel/${123456}`);
-  }
-  const { stepData, currentStep, updateAnswer, updateStep } = useFunnel("123456", onSubmit, true);
-  
+  const {
+    stepData,
+    currentStep,
+    updateAnswer,
+    updateStep,
+    buildAnswersObject,
+    answers
+  } = useFunnel("123456", true);
 
-  const handleClick = (answer) => {
-    updateAnswer(answer);
-    // updateStep(2);
+  let navigate = useNavigate();
+
+  const handleClick = (value) => {
+    const stateParam = buildAnswersObject(answers, 2, stepData.question, value);
+    navigate(`/funnel/${123456}`, {state: stateParam});
   };
 
   return (
