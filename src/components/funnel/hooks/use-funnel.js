@@ -36,6 +36,7 @@ export default function useFunnel(funnelId, teaser, initialAnswers) {
   useEffect(() => {
     if(!!initialAnswers) {
       setLocalStorage(funnelId, initialAnswers);
+      window.history.replaceState({}, document.title);
     }
   }, []);
 
@@ -44,7 +45,6 @@ export default function useFunnel(funnelId, teaser, initialAnswers) {
       const next = buildAnswersObject(prev, newStep, stepData.question, newAnswer);
 
       setLocalStorage(funnelId, next);
-      setAnswer(getAnswer(next.answers, getStepData(next.step).question));
       return next;
     });
   };
@@ -54,6 +54,10 @@ export default function useFunnel(funnelId, teaser, initialAnswers) {
     updateAnswers(answer, step);
     setStepData(getStepData(step));
     setCompletion(getCompletion(step));
+    setAnswer(getAnswer(
+      answers.answers, 
+      getStepData(step).question
+    ));
   };
 
   const updateAnswer = (answer) => {
@@ -68,6 +72,7 @@ export default function useFunnel(funnelId, teaser, initialAnswers) {
     updateAnswer,
     completion,
     buildAnswersObject,
-    answers
+    answers,
+    answer,
   };
 }

@@ -11,7 +11,7 @@ export default function Funnel() {
   let { id } = useParams();
   let { state } = useLocation();
 
-  const { stepData, currentStep, updateAnswer, updateStep, completion } =
+  const { stepData, currentStep, updateAnswer, updateStep, completion, answer } =
     useFunnel(id, false, state);
 
   return (
@@ -20,11 +20,12 @@ export default function Funnel() {
         <Container fullHeight>
           <FlexContainer flexDirection="column" height="100%">
             <FunnelHead stepData={stepData} completion={completion} />
-            <FunnelBody stepData={stepData} updateAnswer={updateAnswer} />
+            <FunnelBody stepData={stepData} answer={answer} updateAnswer={updateAnswer} />
             <FunnelFooter
               updateStep={updateStep}
               currentStep={currentStep}
               completion={completion}
+              answer={answer}
             />
           </FlexContainer>
         </Container>

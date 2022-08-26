@@ -1,4 +1,3 @@
-
 export const funnel001 = [
   {
     step: 1,
@@ -8,16 +7,16 @@ export const funnel001 = [
         title: "Komponent bygge",
         description:
           "Köp varje ingående del för sig och sätt ihop den på egen hand. Kräver lite erfarenhet eller kanske en hjälpande hand.",
-        value: "custom"
-        },
+        value: "custom",
+      },
       {
         title: "Komplett-PC",
         description:
           "Precis hur det låter, datoren är byggd hos leverantör och är redo att användas direkt vid unboxing!",
-        value: "prebuilt"
+        value: "prebuilt",
       },
     ],
-    sliceType: "card-grid"
+    sliceType: "card-grid",
   },
   {
     step: 2,
@@ -27,16 +26,22 @@ export const funnel001 = [
         title: "knallball",
         description:
           "Precis hur det låter, datoren är byggd hos leverantör och är redo att användas direkt vid unboxing!",
-        value: "kalle"
+        value: "kalle",
       },
       {
         title: "tjallfjall",
         description:
           "Köp varje ingående del för sig och sätt ihop den på egen hand. Kräver lite erfarenhet eller kanske en hjälpande hand.",
-          value: "balle"
-        },
+        value: "balle",
+      },
+      {
+        title: "tjallfjalleriiii",
+        description:
+          "Köp varje ingående del för sig och sätt ihop den på egen hand. Kräver lite erfarenhet eller kanske en hjälpande hand.",
+        value: "balledonggg",
+      },
     ],
-    sliceType: "card-grid"
+    sliceType: "card-grid",
   },
   {
     step: 3,
@@ -46,15 +51,15 @@ export const funnel001 = [
         title: "knallball",
         description:
           "Precis hur det låter, datoren är byggd hos leverantör och är redo att användas direkt vid unboxing!",
-        value: "kalleeeeee"
+        value: "kalleeeeee",
       },
       {
         title: "tjallfjall",
         description:
           "Köp varje ingående del för sig och sätt ihop den på egen hand. Kräver lite erfarenhet eller kanske en hjälpande hand.",
-          value: "balleeeeeeeeeeeeeee"
-        },
+        value: "balleeeeeeeeeeeeeee",
+      },
     ],
-    sliceType: "card-grid"
+    sliceType: "card-grid",
   },
 ];

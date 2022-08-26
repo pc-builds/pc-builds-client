@@ -7,7 +7,12 @@ import {
 } from "../../../components-stateless";
 import { theme } from "../../../utils";
 
-export default function FunnelFooter({ updateStep, currentStep, completion }) {
+export default function FunnelFooter({
+  updateStep,
+  currentStep,
+  completion,
+  answer,
+}) {
   return (
     <>
       <Container py={35}>
@@ -27,6 +32,7 @@ export default function FunnelFooter({ updateStep, currentStep, completion }) {
           <FlexItem flexGrow={1} />
 
           <Button
+            disabled={!answer}
             fullWidth
             maxWidth="150px"
             onClick={() => {

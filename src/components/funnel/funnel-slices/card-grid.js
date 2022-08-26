@@ -2,10 +2,12 @@ import React from "react";
 import { GridContainer, GridItem } from "../../../components-stateless";
 import { OptionCard } from "../index";
 
-export default function CardGrid({ options, onClick }) {
+export default function CardGrid({ options, onClick, answer }) {
   const handleClick = (value) => {
     onClick(value);
   };
+
+  console.log(answer);
 
   return (
     <>
@@ -19,6 +21,7 @@ export default function CardGrid({ options, onClick }) {
               <OptionCard
                 description={option.description}
                 title={option.title}
+                active={answer === option.value}
               />
             </GridItem>
           ))}

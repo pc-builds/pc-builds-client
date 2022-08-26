@@ -2,7 +2,7 @@ import React from "react";
 import { Container, FlexContainer } from "../../../components-stateless";
 import { FunnelSlice } from "../index";
 
-export default function FunnelBody({ stepData, updateAnswer }) {
+export default function FunnelBody({ stepData, updateAnswer, answer }) {
 
   const handleClick = (answer) => {
     updateAnswer(answer)
@@ -16,6 +16,7 @@ export default function FunnelBody({ stepData, updateAnswer }) {
             <FunnelSlice
               sliceType={stepData.sliceType}
               options={stepData.options}
+              answer={answer}
               onClick={handleClick}
             />
           )}

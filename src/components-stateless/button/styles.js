@@ -16,6 +16,13 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      opacity: 0.8;
+    `};
 
   ${({ outlined }) =>
     outlined &&
