@@ -16,8 +16,8 @@ export default function Funnel() {
 
   return (
     <>
-      <Card>
-        <Container fullHeight>
+      {/* <Card elevated rounded> */}
+        {/* <Container fullHeight> */}
           <FlexContainer flexDirection="column" height="100%">
             <FunnelHead stepData={stepData} completion={completion} />
             <FunnelBody stepData={stepData} answer={answer} updateAnswer={updateAnswer} />
@@ -28,8 +28,8 @@ export default function Funnel() {
               answer={answer}
             />
           </FlexContainer>
-        </Container>
-      </Card>
+        {/* </Container> */}
+      {/* </Card> */}
     </>
   );
 }

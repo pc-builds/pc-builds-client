@@ -5,7 +5,7 @@ import { FunnelCompletion } from "./index";
 export default function FunnelHead({ stepData, completion }) {
   return (
     <>
-      <Container py={35}>
+      <Container py="35px">
         <SpaceBetween
           flexDirection={{ xs: "column-reverse", md: "row" }}
           gap={50}

@@ -22,16 +22,16 @@ export const ContainerBase = styled.div`
     px &&
     (resolveBreakpointStyles(px, ["padding-left", "padding-right"]) ||
       css`
-        padding-left: ${px}px;
-        padding-right: ${px}px;
+        padding-left: ${px};
+        padding-right: ${px};
       `)}
 
   ${({ py }) =>
     py &&
     (resolveBreakpointStyles(py, ["padding-top", "padding-bottom"]) ||
       css`
-        padding-top: ${py}px;
-        padding-bottom: ${py}px;
+        padding-top: ${py};
+        padding-bottom: ${py};
       `)}
 `;
 

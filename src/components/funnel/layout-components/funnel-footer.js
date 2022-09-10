@@ -15,7 +15,7 @@ export default function FunnelFooter({
 }) {
   return (
     <>
-      <Container py={35}>
+      <Container py="35px">
         <SpaceBetween gap={25}>
           {currentStep !== 1 && (
             <Button

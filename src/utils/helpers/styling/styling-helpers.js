@@ -11,16 +11,16 @@ const mapProperties = (keys, value) => {
   let obj = "";
 
   keys.forEach((element) => {
-    obj += `${element}: ${value}`
+    obj += `${element}: ${value};`;
   });
   return obj;
-}
+};
 
 export const resolveBreakpointStyles = (breakpointStyles, properties) => {
-
   if (isStrictlyObject(breakpointStyles)) {
     return css`
-      ${breakpointStyles["xs"] && `{
+      ${breakpointStyles["xs"] &&
+      `{
         ${theme.screens.gt_xs} {
           ${mapProperties(properties, breakpointStyles["xs"])}
         }
@@ -29,12 +29,19 @@ export const resolveBreakpointStyles = (breakpointStyles, properties) => {
         }
       }`}
 
-      ${breakpointStyles["md"] && `{
+      ${breakpointStyles["md"] &&
+      `{
         ${theme.screens.gt_md} {
           ${mapProperties(properties, breakpointStyles["md"])}
         }
-      }`} 
-  `;
-  } else return false;
+      }`}
 
-} 
+      ${breakpointStyles["lg"] &&
+      `{
+        ${theme.screens.gt_lg} {
+          ${mapProperties(properties, breakpointStyles["lg"])}
+        }
+      }`}
+    `;
+  } else return false;
+};

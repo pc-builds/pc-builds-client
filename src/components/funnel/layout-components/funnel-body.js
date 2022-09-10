@@ -3,15 +3,14 @@ import { Container, FlexContainer } from "../../../components-stateless";
 import { FunnelSlice } from "../index";
 
 export default function FunnelBody({ stepData, updateAnswer, answer }) {
-
   const handleClick = (answer) => {
-    updateAnswer(answer)
-  }
+    updateAnswer(answer);
+  };
 
   return (
     <>
       <FlexContainer style={{ flexGrow: 2 }} alignItems="center">
-        <Container py={35}>
+        <Container py="35px">
           {stepData && (
             <FunnelSlice
               sliceType={stepData.sliceType}

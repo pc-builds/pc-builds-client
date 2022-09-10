@@ -20,7 +20,7 @@ export default function OptionCard({ title, description, active }) {
   return (
     <>
       <CardWrapper elevated rounded clickable active={active}>
-        <Container alignText="center" py={32} px={24}>
+        <Container alignText="center" py="32px" px="24px">
           <H5 fontWeight={theme.font.weight.medium}>{title}</H5>
           <TextBase smallerText>{description}</TextBase>
         </Container>

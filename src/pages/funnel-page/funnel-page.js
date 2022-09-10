@@ -1,17 +1,22 @@
 import React from "react";
 import { Funnel } from "../../components";
-import { Distance, Section } from "../../components-stateless";
+import { Section } from "../../components-stateless";
 import { theme } from "../../utils";
+import { DesktopFunnelWrapper, MobileFunnelWrapper, StyledCard } from "./index";
 
 export default function FunnelPage() {
   return (
     <>
       <Section background={theme.colors.bg.main} fullHeight>
-        {/* <div style={{ display: "flex", height: "100%", alignItems: "center" }}> */}
-          {/* <div style={{ height: "100%" }}> */}
+        <DesktopFunnelWrapper elevated rounded>
+          <StyledCard elevated rounded>
             <Funnel />
-          {/* </div> */}
-        {/* </div> */}
+          </StyledCard>
+        </DesktopFunnelWrapper>
+
+        <MobileFunnelWrapper>
+          <Funnel />
+        </MobileFunnelWrapper>
       </Section>
     </>
   );
