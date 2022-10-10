@@ -2,21 +2,36 @@
   "builds": [
     {
       "id": 1,
-      "name": "Max bygger - billigare",
+      "name": "Hardcore gaming",
       "images": [
         "https://www.cnet.com/a/img/resize/9a65f5cd3c66b431e9bb2dd11ae9a7ba9bb3125e/2021/10/19/deb2bcd4-4b54-48de-b44f-4a12bf60a534/bld-kit.jpg?auto=webp&width=1200"
       ],
       "cpu": "CPU002",
-      "type": "prebuilt"
+      "type": "custom",
+      "tier": "high",
+      "price": 40000
     },
     {
       "id": 2,
-      "name": "Max bygger - billigare",
+      "name": "Hardcore gaming",
       "images": [
         "https://www.cnet.com/a/img/resize/9a65f5cd3c66b431e9bb2dd11ae9a7ba9bb3125e/2021/10/19/deb2bcd4-4b54-48de-b44f-4a12bf60a534/bld-kit.jpg?auto=webp&width=1200"
       ],
       "cpu": "CPU001",
-      "type": "custom"
+      "type": "custom",
+      "tier": "high",
+      "price": 30000
+    },
+    {
+      "id": 3,
+      "name": "Hardcore gaming",
+      "images": [
+        "https://www.cnet.com/a/img/resize/9a65f5cd3c66b431e9bb2dd11ae9a7ba9bb3125e/2021/10/19/deb2bcd4-4b54-48de-b44f-4a12bf60a534/bld-kit.jpg?auto=webp&width=1200"
+      ],
+      "cpu": "CPU001",
+      "type": "custom",
+      "tier": "high",
+      "price": 20000
     }
   ],
   "parts": [

@@ -8,7 +8,7 @@ export const TextBase = styled.p`
   font-weight: ${theme.font.weight.regular};
   color: ${theme.colors.text.alt};
 
-  ${theme.screens.gt_sm} {
+  ${theme.screens.gt_md} {
     font-size: ${({ smallerText }) => (smallerText ? '16px' : '18px')};
   }
 `;
@@ -16,7 +16,7 @@ export const TextBase = styled.p`
 export const Lead = styled(TextBase)`
   font-size: 18px;
 
-  ${theme.screens.gt_sm} {
+  ${theme.screens.gt_md} {
     font-size: 20px;
   }
 `;

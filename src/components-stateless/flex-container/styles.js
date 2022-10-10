@@ -19,6 +19,17 @@ export const FlexContainer = styled.div`
     align-items: ${alignItems};
   `}
 
+
+  ${({ justifyContent }) =>
+  justifyContent && `
+    justify-content: ${justifyContent};
+  `}
+
+  ${({ flexGrow }) =>
+  flexGrow && `
+  flex-grow: ${flexGrow};
+  `}
+
   ${({ flexDirection }) =>
     flexDirection &&
     (resolveBreakpointStyles(flexDirection, ["flex-direction"]) ||

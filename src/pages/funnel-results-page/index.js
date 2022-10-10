@@ -1,0 +1,1 @@
+export { default as FunnelResultsPage } from "./funnel-results-page";

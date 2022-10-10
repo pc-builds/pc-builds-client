@@ -65,4 +65,19 @@ export const GridContainer = styled.ul`
         }
       }
     `}
+
+    ${({ lg, gap }) =>
+    lg &&
+    css`
+      ${theme.screens.gt_lg} {
+        ${GridItem} {
+          width: ${gap && lg > 1
+            ? `calc(${100 / lg}% - ${((lg - 1) * gap) / lg}px)`
+            : `${100 / lg}%`};
+          max-width: ${gap && lg > 1
+            ? `calc(${100 / lg}% - ${((lg - 1) * gap) / lg}px)`
+            : `${100 / lg}%`};
+        }
+      }
+    `}
 `;

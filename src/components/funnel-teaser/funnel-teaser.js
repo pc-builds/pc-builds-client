@@ -7,10 +7,9 @@ export default function FunnelTeaser() {
   const {
     stepData,
     currentStep,
-    updateAnswer,
-    updateStep,
     buildAnswersObject,
-    answers
+    answers,
+    answer
   } = useFunnel("123456", true);
 
   let navigate = useNavigate();
@@ -32,6 +31,7 @@ export default function FunnelTeaser() {
         <FunnelSlice
           sliceType={stepData.sliceType}
           options={stepData.options}
+          answer={answer}
           onClick={handleClick}
         />
       )}

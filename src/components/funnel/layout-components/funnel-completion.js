@@ -11,6 +11,7 @@ export default function FunnelCompletion({ completion }) {
           maxWidth: "350px",
           borderRadius: "20px",
           background: "lightGrey",
+          margin: "0px auto"
         }}
       >
         <div

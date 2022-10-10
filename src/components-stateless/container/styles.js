@@ -12,6 +12,12 @@ export const ContainerBase = styled.div`
       height: 100%;
     `}
 
+  ${({ fullWidth }) =>
+  fullWidth &&
+  css`
+    width: 100%;
+  `}
+
   ${({ centerAlignContent }) =>
     centerAlignContent &&
     css`

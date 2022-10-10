@@ -1,0 +1,30 @@
+
+- moderkort
+- Cpu
+- gpu
+- ram
+- storage
+- nätagg
+- cpu kylning
+- extra kylning
+- chassi
+- nätverkkort?
+- ljudkort?
+
+
+Vilket typ av bygge? 
+
+Fråga lite om storlek på chassi, få med att det kan påverka prestanda med litet chassi och möjligheten att i framtiden
+uppgradera.
+
+På temat chassi så är även tysthet en faktor då det i mindre chassin inte finns lika mycket utrymme för kylning
+
+Ovan kan ju också ingå i generell fråga om tysthet för andra komponenter. Typ nätagg och processor kylare/vanliga fläktar
+
+RBG lover eller inte?
+
+För processor och antar ram minnen? Fråga om multitasking eller om man ska ägna sig åt andra krävande saker utöver gaming (Streaming?)
+
+Fråga om vilken skärm man använder för att avgränsa grafikkort
+
+kolla denna med Emil https://support.benchmarks.ul.com/support/solutions/articles/44002238427-api-documentation XD
