@@ -4,7 +4,7 @@ import { FunnelSlice } from "../index";
 
 export default function FunnelBody({ stepData, updateAnswer, answer }) {
   const handleClick = (value) => {
-    const existingAnswer = answer.includes(value);
+    const existingAnswer = !!answer.find(({ id }) => id === value.id);
     updateAnswer(value, existingAnswer);
   };
 

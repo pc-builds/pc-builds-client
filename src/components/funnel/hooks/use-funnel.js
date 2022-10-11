@@ -62,7 +62,7 @@ export default function useFunnel(funnelId, teaser, initialAnswers) {
   const updateAnswer = (answer, remove) => {
     setAnswer((prev) => {
       if (remove) {
-        return prev.filter((a) => a !== answer);
+        return prev.filter(({ id }) => id !== answer.id);
       } else if (stepData.answerType === 'multi-select') {
         return [...prev, answer];
       } else {
