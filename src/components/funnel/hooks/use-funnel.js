@@ -8,13 +8,17 @@ const defaultAnswers = {
   answers: {},
 };
 
-const buildAnswersObject = (prev, currentStep, question, answer) => ({
-  ...prev,
-  step: currentStep,
-  answers: answer.length > 0
-    ? { ...prev.answers, [question]: answer } 
-    : { ...prev.answers },
-});
+const buildAnswersObject = (prev, currentStep, question, answer) => {
+  const next = {...prev, step: currentStep};
+
+  if (answer.length > 0 ) {
+    next.answers[question] = answer;
+  } else {
+    delete next.answers[question];
+  }
+
+  return next;
+};
 
 const getLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 const setLocalStorage = (key, value) => localStorage.setItem(key, JSON.stringify(value));
@@ -61,13 +65,18 @@ export default function useFunnel(funnelId, teaser, initialAnswers) {
 
   const updateAnswer = (answer, remove) => {
     setAnswer((prev) => {
+      let newAnswer = [];
+
       if (remove) {
-        return prev.filter(({ id }) => id !== answer.id);
+        newAnswer = prev.filter(({ id }) => id !== answer.id);
       } else if (stepData.answerType === 'multi-select') {
-        return [...prev, answer];
+        newAnswer = [...prev, answer];
       } else {
-        return [answer];
+        newAnswer = [answer];
       }
+
+      updateAnswers(newAnswer, currentStep);
+      return newAnswer;
     });
   };
 
