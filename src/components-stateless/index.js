@@ -8,4 +8,5 @@ export { Container } from "./container";
 export { Section } from "./section";
 export { GridItem, GridContainer } from "./grid";
 export { Card } from "./card";
-export { Button } from "./button"
+export { Button } from "./button";
+export { MediaCard } from "./media-card";

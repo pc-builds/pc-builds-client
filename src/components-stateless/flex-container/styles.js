@@ -14,6 +14,11 @@ export const FlexContainer = styled.div`
     height: ${height};
   `}
 
+  ${({ width }) =>
+  width && `
+  width: ${width};
+`}
+
   ${({ alignItems }) =>
     alignItems && `
     align-items: ${alignItems};

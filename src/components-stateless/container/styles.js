@@ -23,6 +23,20 @@ export const ContainerBase = styled.div`
     css`
       margin: 0px auto;
     `}
+
+  ${({ pl }) =>
+  pl &&
+  (resolveBreakpointStyles(pl, ["padding-left"]) ||
+    css`
+      padding-left: ${pl};
+    `)}
+
+  ${({ pr }) =>
+  pr &&
+  (resolveBreakpointStyles(pr, ["padding-rightß"]) ||
+    css`
+      padding-right: ${pr};
+    `)}
   
   ${({ px }) =>
     px &&
